@@ -1,0 +1,184 @@
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: monospace;
+}
+
+button {
+  background-color: #464646;
+  color: #E7E7E6;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  margin: 20px;
+}
+
+button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+h2 {
+  padding: 25px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.card__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 31vh;
+}
+
+.card__computer-container {
+  background-color: #6EA4BB;
+}
+
+.card__player-container {
+  background-color: #C04C4B;
+}
+
+.card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+}
+
+.card__single {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation-name: 'blink';
+          animation-name: 'blink';
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.card__single--player:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.card__image {
+  width: 135px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.card__type {
+  color: #464646;
+  background-color: #E7E7E6;
+  border-radius: 5px;
+  width: 75%;
+  text-align: center;
+}
+
+.card__battlefield {
+  height: 300px;
+  background-color: #E7E7E6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.result {
+  z-index: 1;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  background-color: rgba(70, 70, 70, 0.8);
+  height: 150px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  border: 5px solid black;
+  color: #E7E7E6;
+}
+
+.result:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.result--final {
+  font-size: 50px;
+  font-weight: bold;
+  -webkit-animation-name: 'blink';
+          animation-name: 'blink';
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.score {
+  font-size: 50px;
+}
+/*# sourceMappingURL=style.css.map */

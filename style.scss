@@ -1,0 +1,125 @@
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+button {
+    background-color: #464646;
+    color: #E7E7E6;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    margin: 20px;
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+
+h2 {
+    padding: 25px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.card {
+    &__container {
+        display: flex;
+        justify-content: center;
+        height: 31vh;
+    }
+    &__computer-container {
+        background-color: #6EA4BB;
+    }
+    &__player-container {
+        background-color: #C04C4B;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        visibility: hidden;
+    }
+    &__single {
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation-name: 'blink';
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        &--player {
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+        &--computer {
+        }
+    }
+    &__image {
+        width: 135px;
+        height: 200px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    &__type {
+        color: #464646;
+        background-color: #E7E7E6;
+        border-radius: 5px;
+        width: 75%;
+        text-align: center;
+    }
+    &__battlefield {
+        height: 300px;
+        background-color: #E7E7E6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.result {
+    z-index: 1;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    background-color: rgba(70,70,70,0.8);
+    height: 150px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 5px solid black;
+    color: #E7E7E6;
+    &:hover {
+        transform: scale(1.2);
+    }
+    &--final {
+        font-size: 50px;
+        font-weight: bold;
+        animation-name: 'blink';
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+.score {
+    font-size: 50px;
+}
